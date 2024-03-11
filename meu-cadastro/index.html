@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome de sua aplicação - Meu cadastro</title>
+</head>
+<body>
+    <div>
+        <div>
+            <article>
+                <h1>Meu cadastro</h1>
+            </article>
+        </div>
+        <div>
+            <form name="minha-conta">
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome">
+                    </div>
+                    <div>
+                        <label for="sobrenome">Sobrenome</label>
+                        <input type="text" name="sobrenome">
+                    </div>
+                    <div>
+                        <label for="data_nascimento">Data de nascimento</label>
+                        <input type="date" name="data_nascimento">
+                    </div>
+                    <div>
+                        <label for="genero">Gênero</label>
+                        <select name="genero">
+                            <option disabled selected>Escolha um gênero</option>
+                            <option value="1">Feminino</option>
+                            <option value="2">Masculino</option>
+                            <option value="3">Prefiro não informar</option>
+                        </select>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Contatos</legend>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" readonly>
+                    </div>
+                    <div>
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" name="telefone">
+                    </div>
+                </fieldset>              
+                <div>
+                    <button type="submit">Atualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
