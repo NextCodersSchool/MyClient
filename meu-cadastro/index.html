@@ -9,89 +9,99 @@
 </head>
 <body>
     <div class="container-fluid border-bottom mb-5">
-        <div class="row">
-            <div class="col-12">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#">Nome da aplicação</a>
-                    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbar">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/#sobre">Sobre a aplicação</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/#objetivos">Objetivos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/#tecnologias">Tecnologias utilizadas</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/#funcionalidades">Funcionalidades</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/#equipe">Equipe</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/#apoio">Apoio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/#contatos">Contatos</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg my-2">
+                        <a class="navbar-brand" href="#">Nome da aplicação</a>
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbar">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-end">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#sobre">Sobre a aplicação</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#objetivos">Objetivos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#tecnologias">Tecnologias utilizadas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#funcionalidades">Funcionalidades</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#equipe">Equipe</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#apoio">Apoio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#contatos">Contatos</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
             </div>
         </div>
     </div>
-    <div>
-        <div>
-            <article>
-                <h1>Meu cadastro</h1>
-            </article>
-        </div>
-        <div>
-            <form name="minha-conta">
-                <fieldset>
-                    <legend>Dados pessoais</legend>
-                    <div>
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome">
-                    </div>
-                    <div>
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" name="sobrenome">
-                    </div>
-                    <div>
-                        <label for="data_nascimento">Data de nascimento</label>
-                        <input type="date" name="data_nascimento">
-                    </div>
-                    <div>
-                        <label for="genero">Gênero</label>
-                        <select name="genero">
-                            <option disabled selected>Escolha um gênero</option>
-                            <option value="1">Feminino</option>
-                            <option value="2">Masculino</option>
-                            <option value="3">Prefiro não informar</option>
-                        </select>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Contatos</legend>
-                    <div>
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" readonly>
-                    </div>
-                    <div>
-                        <label for="telefone">Telefone</label>
-                        <input type="tel" name="telefone">
-                    </div>
-                </fieldset>              
-                <div>
-                    <button type="submit">Atualizar</button>
-                </div>
-            </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <artcile>
+                    <h1 class="display-2 mb-5">Meu cadastro</h1>
+                </article>
+            </div>
+            <div class="col-12">
+                <form name="minha-conta">
+                    <fieldset class="mb-3">
+                        <legend class="h5 mb-4">Dados pessoais</legend>
+                        <div class="row">
+                            <div class="col-12 my-1">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome">
+                            </div>
+                            <div class="col-12 my-1">
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome">
+                            </div>
+                            <div class="col-12 my-1">
+                                <label for="data_nascimento">Data de nascimento</label>
+                                <input type="date" name="data_nascimento">
+                            </div>
+                            <div class="col-12 my-1">
+                                <label for="genero">Gênero</label>
+                                <select name="genero">
+                                    <option disabled selected>Escolha um gênero</option>
+                                    <option value="1">Feminino</option>
+                                    <option value="2">Masculino</option>
+                                    <option value="3">Prefiro não informar</option>
+                                </select>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="mb-4">
+                        <legend class="h5 mb-3">Contatos</legend>
+                        <div class="row">
+                            <div class="col-12 my-1">
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" readonly>
+                            </div>
+                            <div class="col-12 my-1">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" name="telefone">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 my-4">
+                                <button type="submit">Atualizar</button>
+                            </div>
+                        </div>              
+                    </fieldset>
+                </form>
+            </div>
         </div>
     </div>
     <!-- Bootstrap -->
