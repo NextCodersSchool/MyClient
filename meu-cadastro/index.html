@@ -56,25 +56,31 @@
             </div>
             <div class="col-12">
                 <form name="minha-conta">
-                    <fieldset class="mb-3">
+                    <fieldset class="mb-4">
                         <legend class="h5 mb-4">Dados pessoais</legend>
                         <div class="row">
                             <div class="col-12 my-1">
-                                <label for="nome">Nome</label>
-                                <input type="text" name="nome">
+                                <div class="form-floating">
+                                    <input class="form-control" type="text" name="nome" placeholder="Nome">
+                                    <label for="nome">Nome</label>
+                                </div>
                             </div>
                             <div class="col-12 my-1">
-                                <label for="sobrenome">Sobrenome</label>
-                                <input type="text" name="sobrenome">
+                                <div class="form-floating">
+                                    <input class="form-control" type="text" name="sobrenome" placeholder="Sobrenome">
+                                    <label for="sobrenome">Sobrenome</label>
+                                </div>
                             </div>
                             <div class="col-12 my-1">
-                                <label for="data_nascimento">Data de nascimento</label>
-                                <input type="date" name="data_nascimento">
+                                <div class="form-floating">
+                                    <input class="form-control" type="date" name="data_nascimento">
+                                    <label for="data_nascimento">Data de nascimento</label>
+                                </div>
                             </div>
                             <div class="col-12 my-1">
-                                <label for="genero">Gênero</label>
-                                <select name="genero">
-                                    <option disabled selected>Escolha um gênero</option>
+                                <label class="d-none mb-2" for="genero">Gênero</label>
+                                <select class="form-select form-select py-3" name="genero">
+                                    <option disabled selected>Gênero</option>
                                     <option value="1">Feminino</option>
                                     <option value="2">Masculino</option>
                                     <option value="3">Prefiro não informar</option>
@@ -86,17 +92,23 @@
                         <legend class="h5 mb-3">Contatos</legend>
                         <div class="row">
                             <div class="col-12 my-1">
-                                <label for="email">E-mail</label>
-                                <input type="email" name="email" readonly>
+                                <div class="form-floating">
+                                    <input class="form-control" type="email" name="email" value="email@provedor.com.br" readonly>
+                                    <label for="email">E-mail</label>
+                                </div>
                             </div>
                             <div class="col-12 my-1">
-                                <label for="telefone">Telefone</label>
-                                <input type="tel" name="telefone">
+                                <div class="form-floating">
+                                    <input class="form-control" type="tel" name="telefone" placeholder="Telefone">
+                                    <label for="telefone">Telefone</label>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 my-4">
-                                <button type="submit">Atualizar</button>
+                                <div class="d-grid gap-2">
+                                    <button class="btn btn-primary btn-lg" type="submit">Atualizar</button>
+                                </div>
                             </div>
                         </div>              
                     </fieldset>
